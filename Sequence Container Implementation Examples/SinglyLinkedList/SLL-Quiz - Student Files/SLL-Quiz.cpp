@@ -41,10 +41,10 @@ struct SLL
   Node * insert_after( Node * position, T const & data )
   {
     ///////////////////////// TO-DO (1) //////////////////////////////
-    Node * newNode = new Node( data );
-    if( position == nullptr )
+    Node * newNode = new Node(data);
+    if(position == nullptr)
     {
-      newNode -> next = _head;
+      newNode -> _next = _head;
       _head = newNode;
       if( _tail == nullptr ) _tail = newNode;
     }
